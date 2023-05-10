@@ -14,3 +14,10 @@
 | 6 | Προφορική υποστήριξη της αναφοράς σας |  |
 ## Παραδοτέο 3
 Η ανάλυση δεδομένων είναι η διαδικασία αξιολόγησης δεδομένων χρησιμοποιώντας αναλυτικά και στατιστικά εργαλεία για να ανακαλύψετε χρήσιμες πληροφορίες και να βοηθήσετε στη λήψη επιχειρηματικών αποφάσεων. Υπάρχουν διάφορες μέθοδοι ανάλυσης δεδομένων, όπως η εξόρυξη δεδομένων, η ανάλυση των κειμένων, η επιχειρηματική ευφυΐα και η απεικόνιση δεδομένων.
+## Παραδοτέο 5
+This code reads data from a file named 'sorting_runtimes.txt', which contains the runtimes of various sorting algorithms. Each line of the file represents the runtime of a single sorting algorithm. The file has eight lines per algorithm, with the first line containing the name of the algorithm and the next line containing the runtime.
+The code then reads the data from the file and stores it in a list called data, with each line of the file as a separate item in the list.
+Next, the code initializes an empty dictionary called runtimes to store the total runtime for each sorting algorithm. The code then loops through the data list in increments of eight, as there are eight lines for each algorithm in the file. For each algorithm, the code extracts the name and runtime from the appropriate lines in the data list, converts the runtime to a float value, and adds it to the corresponding entry in the runtimes dictionary.
+After calculating the total runtime for each algorithm, the code then calculates the average runtime by dividing the total runtime by the number of times the algorithm was run, which in this case is 10.
+Finally, the code finds the algorithm with the fastest average runtime by using the min function to find the minimum value in the runtimes dictionary and returns its key-value pair as a tuple. The lambda function is used to specify that the key to compare in the min function is the second element of each tuple, which is the runtime value.
+The code then prints a string indicating the algorithm with the fastest average runtime and its runtime in seconds, formatted to six decimal places.
